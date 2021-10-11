@@ -16,7 +16,7 @@
 body {
   font-family: var(--font-content);
   min-height: 100vh;
-  background: repeat url(/boxtile_dark.png);
+  background: repeat url(boxtile_dark.png);
   color: #fff;
   text-align: center;
   padding-top: 2rem;
@@ -57,7 +57,7 @@ body {
 
 .decoration {
   content: "";
-  background: no-repeat url(/seal.png);
+  background: no-repeat url(seal.png);
   background-size: contain;
   width: 140px;
   height: 140px;
@@ -68,7 +68,7 @@ body {
 }
 
 #tribute-info {
-  background: repeat url(/boxtile3_dark.png);
+  background: repeat url(boxtile3_dark.png);
   clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 100%);
   padding: 4rem 1rem 2rem;
   text-align: left;
