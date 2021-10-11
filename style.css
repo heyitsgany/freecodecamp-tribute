@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat:wght@300;400;500&display=swap");
+
+:root {
+  --font-title: "Arvo", serif;
+  --font-content: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-content);
+  min-height: 100vh;
+  background: repeat url(/boxtile_dark.png);
+  color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#main {
+  width: 100%;
+  height: auto;
+}
+
+#title {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#img-div {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  border-radius: 0.25rem;
+  margin: 0 auto;
+}
+
+#img-caption {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #ddd;
+  width: 60%;
+}
+
+.decoration {
+  content: "";
+  background: no-repeat url(/seal.png);
+  background-size: contain;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  right: -15px;
+  bottom: -95px;
+  z-index: 1;
+}
+
+#tribute-info {
+  background: repeat url(/boxtile3_dark.png);
+  clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 100%);
+  padding: 4rem 1rem 2rem;
+  text-align: left;
+  margin-top: -1.5rem;
+}
+
+.tagline {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  width: 15ch;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  max-width: 100%;
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+.more__info {
+  font-weight: 500;
+}
+
+#tribute-link {
+  color: #eee;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#tribute-link:hover,
+#tribute-link:active {
+  color: lightskyblue;
+}
+
+/* SLIDESHOW ELEMENT */
+.slideshow {
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow__slides {
+  background: url(screenshot_slides.png);
+  height: 224px;
+  width: 3840px;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-1920px, 0, 0);
+  }
+}
+
+@media screen and (min-width: 810px) {
+  #title {
+    font-size: 3rem;
+  }
+
+  #img-div {
+    width: 50%;
+  }
+
+  #img-caption {
+    width: 100%;
+  }
+
+  .decoration {
+    right: -35%;
+    bottom: -120px;
+    height: 180px;
+    width: 180px;
+  }
+
+  #tribute-info {
+    clip-path: none;
+    margin-top: 0;
+  }
+
+  .tagline {
+    font-size: 3rem;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  p {
+    max-width: 70%;
+    margin: 1.5rem auto;
+    line-height: 1.6;
+  }
+}
